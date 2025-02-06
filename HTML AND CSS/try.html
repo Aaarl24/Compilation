@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Resume Layout */
+        .resume-container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            width: 30%;
+            background-color: #2e4d21; /* Dark green */
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Profile Image */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+            border: 3px solid white;
+        }
+
+        /* Sidebar Headings */
+        .sidebar h2, .sidebar h3 {
+            font-weight: bold;
+            cursor: pointer; /* Indicating it is clickable */
+        }
+
+        /* Sidebar Text */
+        .sidebar p, .skills-list li {
+            margin: 5px 0;
+            font-size: 14px;
+            cursor: pointer; /* Indicating it is clickable */
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 10px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            color: #333;
+        }
+
+        .main-content h2 {
+            color: #2e4d21;
+            border-bottom: 2px solid #2e4d21;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Job Experience */
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job h3 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .job p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Education */
+        .education {
+            margin-top: 20px;
+        }
+
+        .education p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2 id="name" onclick="dName()">Click to Show Name</h2>
+
+            <h3 onclick="dDream()">Dream Career</h3>
+            <p id="dream">Click to Reveal Dream Job</p>
+
+            <h3 onclick="DispContact()">Contact</h3>
+            <div id="contacts" class="contact">Click to Display Contact Info</div>
+
+            <h3 onclick="DispSkills()">Skills</h3>
+            <ul class="skills-list">
+                <li id="skill1">Click to Show Skills</li>
+                <li id="skill2"></li>
+                <li id="skill3"></li>
+                <li id="skill4"></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2 onclick="DispInfo()">About Me</h2>
+            <p id="info">Click to Display Info</p>
+
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>Job Title 1</h3>
+                <p><strong>Company Name</strong> | Month/Year - Month/Year</p>
+                <ul>
+                    <li>Responsibility 1</li>
+                    <li>Responsibility 2</li>
+                    <li>Responsibility 3</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Job Title 2</h3>
+                <p><strong>Company Name</strong> | Month/Year - Month/Year</p>
+                <ul>
+                    <li>Responsibility 1</li>
+                    <li>Responsibility 2</li>
+                    <li>Responsibility 3</li>
+                </ul>
+            </div>
+
+            <h2>Education</h2>
+            <div class="education">
+                <p><strong>No Degree: Computer Science</strong></p>
+                <p>Adamson University, Manila, Philippines | Expected 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function dName() {
+            document.getElementById("name").innerHTML = "Arl John A. Austria";
+        }
+
+        function dDream() {
+            document.getElementById("dream").innerHTML = "GAME DEVELOPER";
+        }
+
+        function DispContact() {
+            document.getElementById("contacts").innerHTML = `
+                <div class="contact">
+                    <div class="contact-info">09085009426</div>
+                    <div class="contact-info">arl.john.austria@adamson.edu.ph</div>
+                    <div class="contact-info">Lian, Batangas 4216</div>
+                </div>
+            `;
+        }
+
+        function DispInfo() {
+            document.getElementById("info").innerHTML = "Arl John Austria is nineteen years old, enthusiastic about games, and very interested in coding skills. He is a Cancer sign born into an intuitive nature and creativity. He is approachable and good for casual conversation and deep subjects as well. A great portion of his free time is spent on video games where he loves the thrills and the challenges within them. Besides being interested in games, he is devoted to programming and aims to make his passion for technology into considerable expertise. His favorite dish is curry, which he enjoys because of its complex flavors and soothing warmth. Green is his favorite color, reflecting his fresh outlook on life and his affinity with nature. He would appreciate the balance between the moment and self-improvement, always looking to grow while appreciating what's happening. He'd be motivated by overcoming the obstacle and exploring the infinite possibilities that coding has to offer. Whether he is perfecting a new game or getting over a programming hurdle, or just hanging out with friends, Arl will always approach his endeavors with a curiosity and composed manner.";
+        }
+
+        function DispSkills() {
+            document.getElementById("skill1").innerHTML = "Teamwork and Collaboration";
+            document.getElementById("skill2").innerHTML = "Organization Skills";
+            document.getElementById("skill3").innerHTML = "Computer Skills";
+            document.getElementById("skill4").innerHTML = "Active Listening";
+        }
+    </script>
+
+</body>
+</html>
