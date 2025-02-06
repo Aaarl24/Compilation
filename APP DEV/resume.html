@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Resume</title>
+        <link href="me.css" rel="stylesheet"/>
+        <script src="js.js"></script>
+    </head>
+    <body>
+      <!-- Use section next time -->
+       <div class="box">
+        <section>
+            <img src="formal.jpg" alt="Photo" width="150px" height="170px">
+        <!-- Using function -->
+            <h1 id="name" onclick="dName()" title="Click to Display Name">Name</h1>
+            <h5 id="dream" onclick="dDream()" title="Click to Display Dream Career">wannabe</h5>
+            <h6 id="contacts" onclick="DispContact()" title="Click to Display Contact Info">Contact Information</h6>
+        </section>
+            <hr>
+        <section class="know"><h3 onclick="DispInfo()" title="Click to Display Information">Get To Know Me</h3>
+          <p id="info" class="para"></p>
+        </section>
+          <hr>
+        <section class="abilidad">
+        <h3 onclick="DispSkills()" title="Click to Display Skills">Skills</h3>
+        <p id="skill1"></p>
+        <p id="skill2"></p>
+        <p id="skill3"></p>
+        <p id="skill4"></p>
+        </section>
+        </div>
+    </body>

@@ -1,0 +1,48 @@
+/* Design a proper resume */
+body {
+    background-color: bisque;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+h3 {
+    text-align: left;
+}
+
+.para {
+    text-align: justify;
+}
+
+.box {
+    width: 80%;
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
