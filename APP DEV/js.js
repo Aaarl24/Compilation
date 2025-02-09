@@ -22,8 +22,12 @@ function DispInfo() {
 }
 
 function DispSkills() {
-    document.getElementById("skill1").innerHTML="Teamwork and Collaboration";
-    document.getElementById("skill2").innerHTML="Organization Skills";
-    document.getElementById("skill3").innerHTML="Computer Skills";
-    document.getElementById("skill4").innerHTML="Active listening";
+    document.getElementById("skill").innerHTML= `
+    <ul>
+        <li>Teamwork and Collaboration</li>
+        <li>Organization Skills</li>
+        <li>Computer Skills</li>
+        <li>Active listening</li>
+    </ul>
+`;
 }
