@@ -41,6 +41,10 @@ h3 {
     text-align: center;
 }
 
+.skills {
+    text-align: left;
+}
+
 hr {
     height: 2px;
     background-color: black;
